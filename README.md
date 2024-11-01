@@ -1,8 +1,6 @@
 # BEM VINDO
 
 # SSH-PLUS
-*PROJETO EM ANDAMENTO...
-
 
 # Modo de instalação
 # 👇👽👍
