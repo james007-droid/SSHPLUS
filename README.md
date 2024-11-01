@@ -12,9 +12,9 @@ Só joga na máquina e deixar instalar
 
 • desativa Ipv6
 
-• instala recursos e o script
-```
-apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/james007-droid/SSHPLUS/main/ssh-plus)
+• ## LINK INSTALAÇÃO DO SCRIPT
 
 ```
-# TMY-SSH-PLUS-V3
+apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/james007-droid/SSHPLUS/main/ssh-plus)
+```
+# JAMES007-DROID SSHPLUS
