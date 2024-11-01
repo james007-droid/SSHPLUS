@@ -989,12 +989,12 @@ exit 0' >$RCLOCAL
 				verif_ptrs $porta
 				fun_inisocks() {
 					sleep 1
-					screen -dmS proxy python /etc/SSHPlus/proxy.py $porta
+					screen -dmS proxy python3 /etc/SSHPlus/proxy.py $porta
 					[[ $(grep -wc "proxy.py" /etc/autostart) = '0' ]] && {
-						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'proxy' -X quit;  screen -dmS proxy python /etc/SSHPlus/proxy.py $porta; }" >>/etc/autostart
+						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'proxy' -X quit;  screen -dmS proxy python3 /etc/SSHPlus/proxy.py $porta; }" >>/etc/autostart
 					} || {
 						sed -i '/proxy.py/d' /etc/autostart
-						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'proxy' -X quit;  screen -dmS proxy python /etc/SSHPlus/proxy.py $porta; }" >>/etc/autostart
+						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'proxy' -X quit;  screen -dmS proxy python3 /etc/SSHPlus/proxy.py $porta; }" >>/etc/autostart
 					}
 				}
 				echo ""
@@ -1044,12 +1044,12 @@ exit 0' >$RCLOCAL
 				verif_ptrs $porta
 				fun_iniwssocks() {
 					sleep 1
-					screen -dmS ws python /etc/SSHPlus/wsproxy.py $porta
+					screen -dmS ws python3 /etc/SSHPlus/wsproxy.py $porta
 					[[ $(grep -wc "wsproxy.py" /etc/autostart) = '0' ]] && {
-						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'ws' -X quit;  screen -dmS ws python /etc/SSHPlus/wsproxy.py $porta; }" >>/etc/autostart
+						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'ws' -X quit;  screen -dmS ws python3 /etc/SSHPlus/wsproxy.py $porta; }" >>/etc/autostart
 					} || {
 						sed -i '/wsproxy.py/d' /etc/autostart
-						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'ws' -X quit;  screen -dmS ws python /etc/SSHPlus/wsproxy.py $porta; }" >>/etc/autostart
+						echo -e "netstat -tlpn | grep -w $porta > /dev/null || {  screen -r -S 'ws' -X quit;  screen -dmS ws python3 /etc/SSHPlus/wsproxy.py $porta; }" >>/etc/autostart
 					}
 				}
 				echo ""
@@ -1632,8 +1632,8 @@ echo -e "\033[0;31m║\033[0m"
 				sts5="\033[1;31m○ "
 			}
 
-			[[ "$(netstat -tlpn | grep 'python' | wc -l)" != '0' ]] && {
-				echo -e "\033[01;31m║\033[1;32mSERVICO: \033[1;33mPROXY SOCKS \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'python' | awk {'print $4'} | cut -d: -f2 | xargs)"
+			[[ "$(netstat -tlpn | grep 'python3' | wc -l)" != '0' ]] && {
+				echo -e "\033[01;31m║\033[1;32mSERVICO: \033[1;33mPROXY SOCKS \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'python3' | awk {'print $4'} | cut -d: -f2 | xargs)"
 				sts4="\033[1;32m◉ "
 			} || {
 				sts4="\033[1;31m○ "
