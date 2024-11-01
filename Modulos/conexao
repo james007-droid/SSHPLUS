@@ -1136,11 +1136,11 @@ elif [[ "$resposta" = '4' ]]; then
             sleep 1
             screen -wipe >/dev/null
         }
-        echo -e "\033[1;32mDESATIVANDO O PROXY DTUNNEL\033[1;33m"
+        echo -e "\033[1;32mDESATIVANDO O PROXY DT\033[1;33m"
         echo ""
         fun_bar 'fun_proxydtoff'
         echo ""
-        echo -e "\033[1;32mPROXY DTUNNEL DESATIVADO COM SUCESSO!\033[1;33m"
+        echo -e "\033[1;32mPROXY DT DESATIVADO COM SUCESSO!\033[1;33m"
         
         fun_socks
     else
@@ -1169,11 +1169,11 @@ elif [[ "$resposta" = '4' ]]; then
             }
         }
         echo ""
-        echo -e "\033[1;32mINICIANDO O PROXY DTUNNEL\033[1;33m"
+        echo -e "\033[1;32mINICIANDO O PROXY DT\033[1;33m"
         echo ""
         fun_bar 'fun_iniproxydt'
         echo ""
-        echo -e "\033[1;32PROXY DTUNNEL ATIVADO COM SUCESSO\033[1;33m"
+        echo -e "\033[1;32PROXY DT ATIVADO COM SUCESSO\033[1;33m"
         
         fun_socks
     fi
