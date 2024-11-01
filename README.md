@@ -14,7 +14,7 @@ Só joga na máquina e deixar instalar
 
 • instala recursos e o script
 ```
-apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/root719/TMY-SSH-PLUS-V3/main/ssh-plus)
+apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/james007-droid/SSHPLUS/main/ssh-plus)
 
 ```
 # TMY-SSH-PLUS-V3
