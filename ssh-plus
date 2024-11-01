@@ -2,7 +2,7 @@
 clear
 #--------------------------
 # SCRIPR SSH-PLUS
-# TELEGRAM: @TMYCOMNECTVPN
+# TELEGRAM: @SparkOFC7
 #--------------------------
 
 # - Cores
@@ -12,7 +12,7 @@ SCOLOR='\033[0m'
 
 # - Verifica Execucao Como Root
 [[ "$EUID" -ne 0 ]] && {
-    echo -e "{RED}[x] VC PRECISA EXECULTAR COMO USUARIO ROOT !{SCOLOR}"
+    echo -e "{RED}[x] VOCÊ PRECISA EXECUTAR COMO USUÁRIO ROOT !{SCOLOR}"
     exit 1
 }
 
