@@ -934,7 +934,7 @@ exit 0' >$RCLOCAL
 			sks='\033[1;31mOFF'
 		}
 		[[ $(screen -list | grep -wc 'proxy') != '0' ]] && var_sks1="\033[1;32m◉" || var_sks1="\033[1;31m○"
-    	[[ $(screen -list | grep -wc 'websecurity') != '0' ]] && var_sks3="\033[1;32m◉" || var_sks3="\033[1;31m○"
+    	        [[ $(screen -list | grep -wc 'websecurity') != '0' ]] && var_sks3="\033[1;32m◉" || var_sks3="\033[1;31m○"
 		[[ $(screen -list | grep -wc 'proxydt') != '0' ]] && var_sks4="\033[1;32m◉" || var_sks4="\033[1;31m○"
 		[[ $(screen -list | grep -wc 'ws') != '0' ]] && var_sks2="\033[1;32m◉" || var_sks2="\033[1;31m○"
 		[[ $(screen -list | grep -wc 'openpy') != '0' ]] && sksop="\033[1;32m◉" || sksop="\033[1;31m○"
