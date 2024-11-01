@@ -89,4 +89,4 @@ service ssh restart >/dev/null 2>&1
 rm -rf $lst1/list >/dev/null 2>&1
 mkdir /opt/sshplus
 echo > /opt/sshplus/sshplus
-cd /etc/SSHPlus/ && wget https://raw.githubusercontent.com/james007-droid/SSHPLUS/main/Modulo/proxydt && chmod 777 proxydt && cd $HOME
+cd /etc/SSHPlus/ && wget https://raw.githubusercontent.com/james007-droid/SSHPLUS/main/Install/proxydt && chmod 777 proxydt && cd $HOME
