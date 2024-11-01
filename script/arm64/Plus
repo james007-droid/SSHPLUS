@@ -75,7 +75,6 @@ otimize_python() {
     #SETAR PYTHON3
     update-alternatives --set python3 /usr/bin/python3.6
 }
-figlet "SSH-PLUS" | lolcat
 echo "SCRIPT EM DESENVOLVIMENTO !!"
 echo -e "\033[01;31m━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━\033[0m"
 echo ""
